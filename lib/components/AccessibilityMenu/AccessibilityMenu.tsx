@@ -3,7 +3,6 @@ import { ACC_MENU_CONTAINER_ID } from "../../constants";
 import Header from "../Header/Header";
 import { AccessibilikState, ChangeAccDraftHander } from "../../types";
 import { produce } from "immer";
-import Footer from "../Footer/Footer";
 import Select from "react-select";
 import styled from "./AccessibilityMenu.module.scss";
 import AccMenuContent from "../AccMenuContent/AccMenuContent";
@@ -76,7 +75,6 @@ const AccessibilityMenu: FC<AccessibilityMenuProps> = ({
           onChangeAccState={onChangeAccState}
           collapsedState={collapsedState}
         />
-        <Footer />
       </div>
       {showAcc && <div className={styled.accAccessibilityMenu__overlay}></div>}
     </div>
