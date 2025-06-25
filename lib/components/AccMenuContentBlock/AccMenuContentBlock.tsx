@@ -2,9 +2,9 @@ import { FC, ReactNode } from "react";
 import classNames from "classnames";
 import { useTranslation } from "react-i18next";
 import { IconSvgComponent } from "../../types";
-import ExpandIcon from "./../../assets/icons/expand.svg?react";
 import styles from "./AccMenuContentBlock.module.scss";
 import { CollapsedStateKeys } from "../../config";
+import ChevronLeftIcon from '../../assets/icons/chevronLeftIcon.svg?react';
 
 interface AccMenuContentBlockProps {
   children: ReactNode;
@@ -45,7 +45,8 @@ const AccMenuContentBlock: FC<AccMenuContentBlockProps> = ({
       {isExpanded && (
         <div className={styles.accMenuContentBlock__expendButtonContainer}>
           <button onClick={expandBlockHandler}>
-            <ExpandIcon/>
+            <ChevronLeftIcon/>
+            <span>{t("accessibility-menu")}</span>
           </button>
         </div>
       )}
