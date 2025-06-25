@@ -1,6 +1,6 @@
 import { FC } from "react";
 import styled from "./AccessibilityButton.module.scss";
-import AccessibleIcon from "../../../assets/icons/accessibleIcon.svg?react";
+import AccessibleOpenArmsIcon from "../../../assets/icons/accessibleOpenArmsIcon.svg?react";
 import classNames from "classnames";
 
 interface AccessibilityButtonProps {
@@ -18,7 +18,7 @@ const AccessibilityButton: FC<AccessibilityButtonProps> = ({onShow,showSpinner})
         [styled.showSpinner]: showSpinner,
       })}
     >
-      <AccessibleIcon title="AccessibleIcon"/>
+      <AccessibleOpenArmsIcon />
     </a>
   );
 };

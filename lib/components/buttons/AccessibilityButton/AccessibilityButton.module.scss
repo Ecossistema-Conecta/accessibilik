@@ -1,7 +1,7 @@
 .AccessibilityIcon {
-  background-color: var(--primary-color);
-  width: 70px;
-  height: 70px;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,8 +9,8 @@
     0 2px 4px 0 rgb(93 100 148 / 20%);
   position: fixed;
   z-index: 500000000000000000;
-  inset-inline-start: 20px;
-  bottom: 20px;
+  inset-inline-end: 20px;
+  top: 20px;
   transition: 0.3s;
   cursor: pointer;
   &.showSpinner {
@@ -20,25 +20,6 @@
 
   &:hover {
     transform: scale(1.2);
-  }
-
-  & > svg {
-    fill: var(--white);
-    width: 75%;
-    z-index: 1;
-  }
-  &:after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    bottom: 0;
-    width: 80%;
-    height: 80%;
-    border: 2px solid white;
-    background-color: var(--primary-color);
-    z-index: 0;
-    transform: translate(-50%, -50%);
   }
 }
 
