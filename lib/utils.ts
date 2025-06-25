@@ -20,7 +20,7 @@ export const isRuleAppliedToElement = (
 
   export const getAccInitState  = ():AccessibilikState => {
     return {
-      language: localStorage.getItem('i18nextLng') ?? i18n.language,
+      language: i18n.language,
       isBlueLightFilter:false,
       brightness:{isBrightness:false,brightness:150},
       isDarkContrast:false,
