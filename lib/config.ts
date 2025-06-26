@@ -12,7 +12,7 @@ export const langOptions = [
   { label: "العربية", value: "ar" }, // Arabic
   { label: "বাংলা", value: "bn" }, // Bengali
   { label: "हिन्दी", value: "hi" }, // Hindi
-  { label: "Português", value: "ptpt" }, // Portuguese
+  { label: "Português", value: "pt" }, // Portuguese
   { label: "日本語", value: "ja" }, // Japanese
   { label: "Deutsch", value: "de" }, // German
   { label: "简体中文", value: "wuu" }, //  Chinese
